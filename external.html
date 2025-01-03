@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/blog.css">
+</head>
+<body>
+    <p id="date1">show the date</p>
+    <p id="time2">show the time</p>
+    
+    <header>
+        <h2>Welcome to my External Website</h2>
+    </header>
+    <H2>Explore mixed selector</H2>
+    <p>My first line CSS</p>
+    <p>My first line CSS1</p>
+    <p>My first line CSS2</p>
+    <p id="three">My first line CSS3</p>
+    <p>My first line CSS4</p>
+    <p>My first line CSS5</p>
+    <p>My first line CSS6</p>
+
+    <h3>Attribute Selector</h3>
+    <form action="">
+        <input type="text" name="" id="">
+        <input type="password" name="" id="" placeholder="enter your password">
+
+    </form>
+
+    <div class="blog">
+        <h3>My first blog</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod dolor excepturi explicabo quae praesentium, nesciunt tempore sit autem unde blanditiis ad debitis animi assumenda quidem facere cum labore asperiores ut.</p>
+        
+    </div>
+    <div class="blog second">
+        <h3>My second blog</h3>
+        <p>Lorem, ipsum dolor sit amet <span class="t1">unde blanditiis</span>consectetur adipisicing elit. Quod dolor excepturi explicabo quae praesentium, nesciunt tempore sit autem unde blanditiis ad debitis animi assumendaonsectetur adipisicing elit. Quod dolor excepturi explicabo quae praesentium, nesciunt tempore sit autem unde blanditiis ad debitis animi assumenda quidem facere cum labore asperiores ut.</p>
+
+    </div>
+    <div class="blog">
+        <h3>My third blog</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod dolor excepturi explicabo quae praesentium, nesciunt tempore sit autem unde blanditiis ad debitis animi assumenda quidem facere cum labore asperiores ut.</p>
+
+    </div>
+    <div class="blog">
+        <h3>My fourth blog</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod dolor excepturi explicabo quae praesentium, nesciunt tempore sit autem unde blanditiis ad debitis animi assumenda quidem facere cum labore asperiores ut.</p>
+
+    </div>
+
+    <div id="btn_main"><button id="btn">Click me</button></div>
+    <h2>A website container size depends on:</h2>
+    <h4>Its called CSS box model</h4>
+    <ol>
+        <li>Contend</li>
+        <li>border</li>
+        <li>margin</li>
+        <li>padding</li>
+        <li>width and height</li>
+    </ol>
+    <script type="text/javascript">
+        var getvalue = new Date()
+        // document.write(getvalue);
+        // const day = getvalue.getDay();
+        // const month = getvalue.getMonth()+1;
+        // const year = getvalue.getFullYear();
+        var time11 = getvalue.toLocaleTimeString()
+         var date11 = getvalue.toLocaleDateString()
+        
+        
+
+        // setInterval(() => {
+        //     document.getElementById('date1').innerHTML=date11;
+        //     document.getElementById('time2').innerHTML=time11;
+        // }, 1000);
+
+        var timess = setInterval(livetimess, 1000)
+        function livetimess() {
+            document.getElementById("date1").innerHTML=date11;
+            document.getElementById("time2").innerHTML=time11;
+            
+        }
+        
+        
+        
+   
+    </script>
+</body>
+</html>
